@@ -1,21 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
+  "buildCommand": "npm run build",
   "installCommand": "npm install",
   "devCommand": "npm run dev",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "functions": {
-    "src/app/api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "regions": ["iad1"],
-  "github": {
-    "enabled": false
-  },
   "headers": [
     {
       "source": "/(.*)",
