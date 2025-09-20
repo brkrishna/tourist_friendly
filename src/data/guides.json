@@ -1,0 +1,222 @@
+[
+  {
+    "id": "guide-001",
+    "name": "Rajesh Kumar",
+    "specialization": ["Heritage", "Historical Sites", "Photography"],
+    "experience": 12,
+    "languages": ["English", "Hindi", "Telugu", "Urdu"],
+    "rating": 4.8,
+    "reviewCount": 234,
+    "location": {
+      "latitude": 17.3616,
+      "longitude": 78.4747,
+      "baseArea": "Old City",
+      "address": "Charminar Area, Hyderabad"
+    },
+    "pricing": {
+      "hourlyRate": 1500,
+      "fullDayRate": 6000,
+      "currency": "INR",
+      "groupDiscount": 10
+    },
+    "availability": {
+      "status": "available",
+      "nextAvailable": "2025-09-21T06:00:00Z",
+      "workingDays": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "workingHours": {
+        "start": "06:00",
+        "end": "18:00"
+      }
+    },
+    "profile": {
+      "bio": "Passionate heritage guide with over 12 years of experience showcasing Hyderabad's rich history. Specialized in photography tours and historical storytelling.",
+      "image": "/images/location1.jpg",
+      "certifications": ["Government Licensed Guide", "Heritage Conservation Certificate"],
+      "interests": ["Photography", "History", "Architecture", "Local Culture"]
+    },
+    "services": [
+      "Heritage site tours",
+      "Photography guidance",
+      "Historical storytelling",
+      "Cultural experiences",
+      "Architecture walks"
+    ],
+    "blockchain": {
+      "verified": true,
+      "walletAddress": "0x742d35Cc6abC8532347bEE8a76e614e31Cb2c3d4",
+      "verificationDate": "2025-08-15T10:00:00Z",
+      "trustScore": 95
+    },
+    "performance": {
+      "completedTours": 487,
+      "cancelationRate": 2.1,
+      "averageRating": 4.8,
+      "responseTime": "15 minutes"
+    }
+  },
+  {
+    "id": "guide-002",
+    "name": "Priya Sharma",
+    "specialization": ["Cultural Tours", "Food Tours", "Local Experiences"],
+    "experience": 8,
+    "languages": ["English", "Hindi", "Telugu"],
+    "rating": 4.7,
+    "reviewCount": 189,
+    "location": {
+      "latitude": 17.4126,
+      "longitude": 78.4484,
+      "baseArea": "Banjara Hills",
+      "address": "Banjara Hills, Hyderabad"
+    },
+    "pricing": {
+      "hourlyRate": 1200,
+      "fullDayRate": 5000,
+      "currency": "INR",
+      "groupDiscount": 15
+    },
+    "availability": {
+      "status": "busy",
+      "nextAvailable": "2025-09-23T09:00:00Z",
+      "workingDays": ["tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "workingHours": {
+        "start": "09:00",
+        "end": "17:00"
+      }
+    },
+    "profile": {
+      "bio": "Cultural enthusiast and food lover, I help tourists discover authentic local experiences and hidden culinary gems of Hyderabad.",
+      "image": "/images/location2.jpg",
+      "certifications": ["Tourism Board Certified", "Food Safety Certificate"],
+      "interests": ["Local Cuisine", "Cultural Heritage", "Shopping", "Festivals"]
+    },
+    "services": [
+      "Food tours",
+      "Cultural experiences",
+      "Shopping assistance",
+      "Local market tours",
+      "Festival celebrations"
+    ],
+    "blockchain": {
+      "verified": true,
+      "walletAddress": "0x123d45Cc6abC8532347bEE8a76e614e31Cb2c3f8",
+      "verificationDate": "2025-07-20T14:30:00Z",
+      "trustScore": 92
+    },
+    "performance": {
+      "completedTours": 312,
+      "cancelationRate": 1.8,
+      "averageRating": 4.7,
+      "responseTime": "12 minutes"
+    }
+  },
+  {
+    "id": "guide-003",
+    "name": "Mohammed Ali",
+    "specialization": ["Religious Sites", "Spiritual Tours", "Architecture"],
+    "experience": 15,
+    "languages": ["English", "Hindi", "Telugu", "Urdu", "Arabic"],
+    "rating": 4.9,
+    "reviewCount": 298,
+    "location": {
+      "latitude": 17.3598,
+      "longitude": 78.4734,
+      "baseArea": "Old City",
+      "address": "Near Mecca Masjid, Hyderabad"
+    },
+    "pricing": {
+      "hourlyRate": 1800,
+      "fullDayRate": 7000,
+      "currency": "INR",
+      "groupDiscount": 8
+    },
+    "availability": {
+      "status": "available",
+      "nextAvailable": "2025-09-21T08:00:00Z",
+      "workingDays": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+      "workingHours": {
+        "start": "08:00",
+        "end": "16:00"
+      }
+    },
+    "profile": {
+      "bio": "Expert in Islamic architecture and religious heritage of Hyderabad. Offers respectful and informative tours of mosques and spiritual sites.",
+      "image": "/images/location3.jpg",
+      "certifications": ["Islamic Heritage Guide", "Interfaith Dialogue Certificate"],
+      "interests": ["Islamic Architecture", "Religious History", "Calligraphy", "Spirituality"]
+    },
+    "services": [
+      "Religious site tours",
+      "Architecture explanation",
+      "Spiritual guidance",
+      "Islamic history tours",
+      "Interfaith experiences"
+    ],
+    "blockchain": {
+      "verified": true,
+      "walletAddress": "0x456d89Cc6abC8532347bEE8a76e614e31Cb2c3e1",
+      "verificationDate": "2025-06-10T11:15:00Z",
+      "trustScore": 98
+    },
+    "performance": {
+      "completedTours": 625,
+      "cancelationRate": 0.8,
+      "averageRating": 4.9,
+      "responseTime": "8 minutes"
+    }
+  },
+  {
+    "id": "guide-004",
+    "name": "Arjun Reddy",
+    "specialization": ["Photography", "Adventure Tours", "Nature Walks"],
+    "experience": 6,
+    "languages": ["English", "Hindi", "Telugu"],
+    "rating": 4.6,
+    "reviewCount": 142,
+    "location": {
+      "latitude": 17.4504,
+      "longitude": 78.3808,
+      "baseArea": "HITEC City",
+      "address": "HITEC City, Hyderabad"
+    },
+    "pricing": {
+      "hourlyRate": 1400,
+      "fullDayRate": 5500,
+      "currency": "INR",
+      "groupDiscount": 12
+    },
+    "availability": {
+      "status": "available",
+      "nextAvailable": "2025-09-21T07:00:00Z",
+      "workingDays": ["wednesday", "thursday", "friday", "saturday", "sunday"],
+      "workingHours": {
+        "start": "07:00",
+        "end": "19:00"
+      }
+    },
+    "profile": {
+      "bio": "Adventure photographer and nature enthusiast. Specializes in capturing the perfect shots while exploring Hyderabad's natural beauty and modern landmarks.",
+      "image": "/images/location4.jpg",
+      "certifications": ["Professional Photography Certificate", "Adventure Tourism License"],
+      "interests": ["Photography", "Trekking", "Technology", "Modern Architecture"]
+    },
+    "services": [
+      "Photography tours",
+      "Adventure activities",
+      "Nature walks",
+      "Modern city tours",
+      "Tech hub exploration"
+    ],
+    "blockchain": {
+      "verified": true,
+      "walletAddress": "0x789d12Cc6abC8532347bEE8a76e614e31Cb2c3a2",
+      "verificationDate": "2025-09-01T16:45:00Z",
+      "trustScore": 88
+    },
+    "performance": {
+      "completedTours": 198,
+      "cancelationRate": 3.2,
+      "averageRating": 4.6,
+      "responseTime": "20 minutes"
+    }
+  }
+]

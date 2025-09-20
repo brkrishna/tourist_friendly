@@ -2,7 +2,7 @@
   {
     "id": "attraction_1",
     "name": "Charminar",
-    "description": "The iconic 16th-century mosque and monument in Hyderabad, a symbol of the city's rich history.",
+    "description": "The iconic 16th-century mosque and monument in Hyderabad, a symbol of the city's rich history and architectural brilliance. Built in 1591 by Sultan Muhammad Quli Qutb Shah.",
     "category": "historical",
     "location": {
       "latitude": 17.3616,
@@ -12,9 +12,14 @@
     },
     "images": [
       {
-        "url": "/images/charminar-main.jpg",
-        "alt": "Charminar monument during daytime",
-        "caption": "The majestic Charminar standing tall in the heart of Hyderabad"
+        "url": "/images/location1.jpg",
+        "alt": "Charminar monument during golden hour",
+        "caption": "The majestic Charminar illuminated during sunset"
+      },
+      {
+        "url": "/images/location2.jpg",
+        "alt": "Charminar surrounded by bustling markets",
+        "caption": "The vibrant atmosphere around Charminar with traditional bazaars"
       }
     ],
     "pricing": {
@@ -26,13 +31,16 @@
       "openingTime": "09:00",
       "closingTime": "17:30",
       "closedDays": [],
-      "seasonalChanges": {}
+      "seasonalChanges": {
+        "ramadan": "Extended hours during Ramadan month",
+        "winter": "Closes 30 minutes earlier in winter"
+      }
     },
     "accessibility": {
       "wheelchairAccessible": false,
       "audioGuides": true,
       "visualAids": false,
-      "accessibilityDescription": "Limited wheelchair access due to historical architecture"
+      "accessibilityDescription": "Limited wheelchair access due to historical architecture and narrow staircases"
     },
     "realTimeData": {
       "crowdLevel": "medium",
@@ -40,15 +48,15 @@
       "weatherImpact": "Clear weather, perfect for visiting",
       "lastUpdated": "2025-09-20T10:00:00Z"
     },
-    "amenities": ["Parking", "Photography allowed", "Guided tours", "Souvenir shop"],
+    "amenities": ["Parking", "Photography allowed", "Guided tours", "Souvenir shop", "Nearby restaurants", "ATM"],
     "rating": 4.5,
     "reviewCount": 2847,
-    "tags": ["historical", "architecture", "photography", "heritage", "iconic"]
+    "tags": ["historical", "architecture", "photography", "heritage", "iconic", "unesco", "monument"]
   },
   {
     "id": "attraction_2",
     "name": "Golconda Fort",
-    "description": "A ruined citadel and fortress city located on the western outskirts of Hyderabad.",
+    "description": "A magnificent ruined citadel and fortress city located on the western outskirts of Hyderabad. Once the capital of the medieval sultanate of the Qutb Shahi dynasty, famous for its acoustic architecture and diamond trade history.",
     "category": "historical",
     "location": {
       "latitude": 17.3833,
@@ -58,9 +66,14 @@
     },
     "images": [
       {
-        "url": "/images/golconda-fort.jpg",
-        "alt": "Golconda Fort ruins with ancient walls",
-        "caption": "The majestic ruins of Golconda Fort showcasing medieval architecture"
+        "url": "/images/location3.jpg",
+        "alt": "Golconda Fort massive stone walls and entrance",
+        "caption": "The imposing entrance of Golconda Fort with massive stone fortifications"
+      },
+      {
+        "url": "/images/location4.jpg",
+        "alt": "Panoramic view from Golconda Fort top",
+        "caption": "Breathtaking panoramic view of Hyderabad from the fort's highest point"
       }
     ],
     "pricing": {
@@ -72,13 +85,16 @@
       "openingTime": "09:00",
       "closingTime": "17:30",
       "closedDays": ["Friday"],
-      "seasonalChanges": {}
+      "seasonalChanges": {
+        "summer": "Early morning visits recommended",
+        "monsoon": "May close during heavy rains"
+      }
     },
     "accessibility": {
       "wheelchairAccessible": false,
       "audioGuides": true,
       "visualAids": true,
-      "accessibilityDescription": "Challenging terrain, not suitable for mobility aids"
+      "accessibilityDescription": "Challenging terrain with steep climbs, not suitable for mobility aids. Lower fort areas partially accessible."
     },
     "realTimeData": {
       "crowdLevel": "low",
@@ -86,27 +102,32 @@
       "weatherImpact": "Cool morning, ideal for exploration",
       "lastUpdated": "2025-09-20T09:30:00Z"
     },
-    "amenities": ["Parking", "Guided tours", "Sound and light show", "Cafeteria"],
+    "amenities": ["Parking", "Guided tours", "Sound and light show", "Cafeteria", "Rest areas", "First aid", "Security"],
     "rating": 4.3,
     "reviewCount": 1924,
-    "tags": ["fort", "ruins", "history", "architecture", "trekking"]
+    "tags": ["fort", "ruins", "history", "architecture", "trekking", "acoustic", "diamonds", "qutb-shahi"]
   },
   {
     "id": "attraction_3",
     "name": "Hussain Sagar Lake",
-    "description": "A heart-shaped lake built in 1563, famous for the Buddha statue in the center.",
+    "description": "A heart-shaped artificial lake built in 1563 by Ibrahim Quli Qutb Shah. Famous for the world's largest monolithic statue of Buddha erected on the Gibraltar Rock in the middle of the lake.",
     "category": "nature",
     "location": {
       "latitude": 17.4239,
       "longitude": 78.4738,
-      "address": "Hussain Sagar, Hyderabad, Telangana",
+      "address": "Hussain Sagar, Tank Bund Road, Hyderabad, Telangana",
       "neighborhood": "Secunderabad"
     },
     "images": [
       {
-        "url": "/images/hussain-sagar.jpg",
-        "alt": "Hussain Sagar Lake with Buddha statue",
-        "caption": "The serene Hussain Sagar Lake with the iconic Buddha statue"
+        "url": "/images/location5.jpg",
+        "alt": "Hussain Sagar Lake with Buddha statue at sunset",
+        "caption": "The serene Hussain Sagar Lake with the iconic Buddha statue during golden hour"
+      },
+      {
+        "url": "/images/location6.jpg",
+        "alt": "Tank Bund promenade with city skyline",
+        "caption": "The beautiful Tank Bund promenade offering stunning views of the city skyline"
       }
     ],
     "pricing": {
@@ -118,23 +139,80 @@
       "openingTime": "05:00",
       "closingTime": "22:00",
       "closedDays": [],
-      "seasonalChanges": {}
+      "seasonalChanges": {
+        "monsoon": "Boating may be suspended during heavy rains",
+        "festival": "Extended hours during festivals"
+      }
     },
     "accessibility": {
       "wheelchairAccessible": true,
       "audioGuides": false,
       "visualAids": false,
-      "accessibilityDescription": "Wheelchair accessible with paved walkways"
+      "accessibilityDescription": "Wheelchair accessible with paved walkways along Tank Bund. Boat access limited for wheelchair users."
     },
     "realTimeData": {
       "crowdLevel": "medium",
       "waitTime": 0,
-      "weatherImpact": "Pleasant evening breeze",
+      "weatherImpact": "Pleasant evening breeze, perfect for boating",
       "lastUpdated": "2025-09-20T18:00:00Z"
     },
-    "amenities": ["Boating", "Walking track", "Food stalls", "Musical fountain"],
+    "amenities": ["Boating", "Walking track", "Food stalls", "Musical fountain", "Laser show", "Parking", "Gardens", "Children's play area"],
     "rating": 4.2,
     "reviewCount": 3156,
-    "tags": ["lake", "boating", "evening", "family", "peaceful"]
+    "tags": ["lake", "boating", "evening", "family", "peaceful", "buddha", "tank-bund", "photography"]
+  },
+  {
+    "id": "attraction_4",
+    "name": "Ramoji Film City",
+    "description": "World's largest film studio complex certified by Guinness World Records. Spread over 1666 acres, it's a complete entertainment destination with film sets, gardens, and adventure activities.",
+    "category": "entertainment",
+    "location": {
+      "latitude": 17.2544,
+      "longitude": 78.6808,
+      "address": "Anajpur, Hayathnagar Mandal, Ranga Reddy District, Telangana 501512",
+      "neighborhood": "Hayathnagar"
+    },
+    "images": [
+      {
+        "url": "/images/location1.jpg",
+        "alt": "Ramoji Film City grand entrance",
+        "caption": "The spectacular entrance to the world's largest film studio"
+      },
+      {
+        "url": "/images/location2.jpg",
+        "alt": "Film sets and gardens at Ramoji",
+        "caption": "Beautifully designed film sets and landscaped gardens"
+      }
+    ],
+    "pricing": {
+      "entryFee": 1150,
+      "currency": "INR",
+      "freeForChildren": false
+    },
+    "schedule": {
+      "openingTime": "09:00",
+      "closingTime": "17:30",
+      "closedDays": [],
+      "seasonalChanges": {
+        "summer": "Early entry recommended",
+        "weekend": "Extended hours on weekends"
+      }
+    },
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "audioGuides": true,
+      "visualAids": true,
+      "accessibilityDescription": "Fully wheelchair accessible with shuttle services and ramps throughout the complex"
+    },
+    "realTimeData": {
+      "crowdLevel": "high",
+      "waitTime": 30,
+      "weatherImpact": "Sunny day, perfect for outdoor activities",
+      "lastUpdated": "2025-09-20T11:00:00Z"
+    },
+    "amenities": ["Restaurant", "Hotel accommodation", "Adventure sports", "Gardens", "Shopping", "Transportation", "First aid", "Photography"],
+    "rating": 4.4,
+    "reviewCount": 5234,
+    "tags": ["entertainment", "film-studio", "family", "adventure", "gardens", "guinness-record", "full-day"]
   }
 ]

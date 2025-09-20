@@ -2,7 +2,7 @@
   {
     "id": "restaurant_1",
     "name": "Paradise Restaurant",
-    "description": "Famous for authentic Hyderabadi biryani and traditional cuisine.",
+    "description": "Famous for authentic Hyderabadi biryani and traditional cuisine. A legendary establishment serving the royal flavors of Nizams since 1953.",
     "cuisineTypes": ["Hyderabadi", "Mughlai", "Indian"],
     "location": {
       "latitude": 17.4065,
@@ -12,9 +12,14 @@
     },
     "images": [
       {
-        "url": "/images/paradise-restaurant.jpg",
-        "alt": "Paradise Restaurant interior with traditional decor",
-        "caption": "The iconic Paradise Restaurant known for its biryani"
+        "url": "/images/cuisine1.jpg",
+        "alt": "Paradise Restaurant's signature Hyderabadi biryani",
+        "caption": "The world-famous Paradise biryani with aromatic basmati rice"
+      },
+      {
+        "url": "/images/cuisine2.jpg",
+        "alt": "Traditional Mughlai cuisine spread",
+        "caption": "A royal feast of Mughlai delicacies"
       }
     ],
     "pricing": {
@@ -26,7 +31,10 @@
       "vegetarian": true,
       "vegan": false,
       "glutenFree": false,
-      "allergenInfo": {},
+      "allergenInfo": {
+        "nuts": "Contains cashews and almonds in some dishes",
+        "dairy": "Ghee and yogurt used in cooking"
+      },
       "spiceLevels": ["mild", "medium", "hot"]
     },
     "schedule": {
@@ -47,23 +55,68 @@
         {
           "id": "item_1",
           "name": "Hyderabadi Chicken Biryani",
-          "description": "Aromatic basmati rice cooked with tender chicken and traditional spices",
+          "description": "Aromatic basmati rice cooked with tender chicken pieces, saffron, and authentic Hyderabadi spices. Served with raita and shorba.",
           "price": 320,
           "category": "Main Course",
           "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_2",
+          "name": "Mutton Biryani",
+          "description": "Premium mutton pieces slow-cooked with aged basmati rice and royal spices. A true Nizami delicacy.",
+          "price": 420,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_3",
+          "name": "Vegetable Biryani",
+          "description": "Mixed vegetables and paneer cooked with fragrant rice and mild spices. Perfect for vegetarians.",
+          "price": 280,
+          "category": "Main Course",
+          "spiceLevel": "mild",
+          "dietaryTags": ["vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_4",
+          "name": "Chicken 65",
+          "description": "Spicy fried chicken pieces marinated in yogurt and special spices. A perfect starter.",
+          "price": 240,
+          "category": "Appetizers",
+          "spiceLevel": "hot",
           "dietaryTags": ["non-vegetarian"]
+        },
+        {
+          "id": "item_5",
+          "name": "Haleem",
+          "description": "Traditional slow-cooked lentils with meat, wheat, and aromatic spices. A Ramadan specialty available year-round.",
+          "price": 180,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian"]
+        },
+        {
+          "id": "item_6",
+          "name": "Qubani Ka Meetha",
+          "description": "Traditional Hyderabadi dessert made with apricots, cream, and nuts. A royal sweet ending.",
+          "price": 120,
+          "category": "Desserts",
+          "spiceLevel": "none",
+          "dietaryTags": ["vegetarian"]
         }
       ],
-      "lastUpdated": "2025-09-15T00:00:00Z"
+      "lastUpdated": "2025-09-20T00:00:00Z"
     },
-    "amenities": ["Air conditioning", "Takeaway", "Family dining", "Parking"],
+    "amenities": ["Air conditioning", "Takeaway", "Family dining", "Parking", "Card payment", "WiFi"],
     "rating": 4.4,
     "reviewCount": 5643
   },
   {
     "id": "restaurant_2",
     "name": "Shah Ghouse Cafe",
-    "description": "Authentic Hyderabadi cuisine with famous kebabs and biryanis.",
+    "description": "Authentic Hyderabadi cuisine with famous kebabs and biryanis. A local favorite in the heart of Old City since 1989.",
     "cuisineTypes": ["Hyderabadi", "Mughlai"],
     "location": {
       "latitude": 17.3598,
@@ -73,9 +126,14 @@
     },
     "images": [
       {
-        "url": "/images/shah-ghouse.jpg",
-        "alt": "Shah Ghouse Cafe traditional setting",
-        "caption": "Traditional dining experience at Shah Ghouse Cafe"
+        "url": "/images/cuisine3.jpg",
+        "alt": "Shah Ghouse Cafe's famous seekh kebabs",
+        "caption": "Juicy seekh kebabs grilled to perfection"
+      },
+      {
+        "url": "/images/cuisine4.jpg",
+        "alt": "Traditional Hyderabadi spread",
+        "caption": "Authentic Old City flavors"
       }
     ],
     "pricing": {
@@ -87,7 +145,9 @@
       "vegetarian": true,
       "vegan": false,
       "glutenFree": false,
-      "allergenInfo": {},
+      "allergenInfo": {
+        "dairy": "Yogurt marinades used in kebabs"
+      },
       "spiceLevels": ["medium", "hot"]
     },
     "schedule": {
@@ -106,19 +166,273 @@
     "menu": {
       "items": [
         {
-          "id": "item_2",
+          "id": "item_7",
           "name": "Mutton Seekh Kebab",
-          "description": "Grilled minced mutton kebabs with aromatic spices",
+          "description": "Hand-rolled minced mutton kebabs grilled over charcoal with aromatic spices and herbs.",
           "price": 180,
           "category": "Appetizers",
           "spiceLevel": "hot",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_8",
+          "name": "Chicken Tikka",
+          "description": "Tender chicken pieces marinated in yogurt and spices, grilled in tandoor.",
+          "price": 160,
+          "category": "Appetizers",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_9",
+          "name": "Mutton Biryani",
+          "description": "Slow-cooked mutton with basmati rice, fried onions, and special garam masala.",
+          "price": 350,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_10",
+          "name": "Chicken Shorba",
+          "description": "Clear chicken soup with herbs and spices. Perfect to start your meal.",
+          "price": 80,
+          "category": "Soups",
+          "spiceLevel": "mild",
           "dietaryTags": ["non-vegetarian"]
+        },
+        {
+          "id": "item_11",
+          "name": "Roomali Roti",
+          "description": "Paper-thin handkerchief bread, perfect with kebabs and curries.",
+          "price": 25,
+          "category": "Breads",
+          "spiceLevel": "none",
+          "dietaryTags": ["vegetarian"]
         }
       ],
-      "lastUpdated": "2025-09-15T00:00:00Z"
+      "lastUpdated": "2025-09-20T00:00:00Z"
     },
-    "amenities": ["Takeaway", "Late night dining", "Street food"],
+    "amenities": ["Takeaway", "Late night dining", "Street food", "Cash only", "Outdoor seating"],
     "rating": 4.6,
     "reviewCount": 3421
+  },
+  {
+    "id": "restaurant_3",
+    "name": "Jewel of Nizam",
+    "description": "Fine dining restaurant specializing in royal Nizami cuisine with an elegant ambiance. Experience the grandeur of Hyderabadi royal dining.",
+    "cuisineTypes": ["Nizami", "Royal Hyderabadi", "Mughlai"],
+    "location": {
+      "latitude": 17.4504,
+      "longitude": 78.3808,
+      "address": "ITC Kohenur, Madhapur, Hyderabad, Telangana 500081",
+      "neighborhood": "HITEC City"
+    },
+    "images": [
+      {
+        "url": "/images/cuisine5.jpg",
+        "alt": "Royal Nizami thali presentation",
+        "caption": "An exquisite presentation of royal Nizami cuisine"
+      },
+      {
+        "url": "/images/location1.jpg",
+        "alt": "Elegant dining room with royal decor",
+        "caption": "Luxurious dining experience fit for royalty"
+      }
+    ],
+    "pricing": {
+      "priceRange": "luxury",
+      "averageCost": 1200,
+      "currency": "INR"
+    },
+    "dietaryOptions": {
+      "vegetarian": true,
+      "vegan": true,
+      "glutenFree": true,
+      "allergenInfo": {
+        "nuts": "Almonds, cashews, and pistachios used in several dishes",
+        "dairy": "Can be prepared without dairy on request"
+      },
+      "spiceLevels": ["mild", "medium"]
+    },
+    "schedule": {
+      "openingTime": "19:00",
+      "closingTime": "23:30",
+      "closedDays": ["monday"],
+      "seasonalChanges": {}
+    },
+    "realTimeData": {
+      "availability": "available",
+      "waitTime": 0,
+      "reservationRequired": true,
+      "weatherImpact": "",
+      "lastUpdated": "2025-09-20T20:00:00Z"
+    },
+    "menu": {
+      "items": [
+        {
+          "id": "item_12",
+          "name": "Royal Nizami Thali",
+          "description": "A complete royal experience with 12 authentic dishes including biryani, kebabs, curries, and desserts.",
+          "price": 1800,
+          "category": "Set Menu",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian"]
+        },
+        {
+          "id": "item_13",
+          "name": "Shikampuri Kebab",
+          "description": "Stuffed lamb patties with mint chutney, a royal delicacy from the Nizam's kitchen.",
+          "price": 450,
+          "category": "Appetizers",
+          "spiceLevel": "mild",
+          "dietaryTags": ["non-vegetarian"]
+        },
+        {
+          "id": "item_14",
+          "name": "Nizami Handi",
+          "description": "Slow-cooked mutton curry in traditional clay pot with aromatic spices and saffron.",
+          "price": 680,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_15",
+          "name": "Vegetarian Royal Thali",
+          "description": "Elaborate vegetarian spread with paneer dishes, dal, vegetables, and traditional sweets.",
+          "price": 1200,
+          "category": "Set Menu",
+          "spiceLevel": "mild",
+          "dietaryTags": ["vegetarian"]
+        },
+        {
+          "id": "item_16",
+          "name": "Double Ka Meetha",
+          "description": "Royal bread pudding with nuts, cardamom, and rose water. A Nizami classic dessert.",
+          "price": 280,
+          "category": "Desserts",
+          "spiceLevel": "none",
+          "dietaryTags": ["vegetarian"]
+        }
+      ],
+      "lastUpdated": "2025-09-20T00:00:00Z"
+    },
+    "amenities": ["Valet parking", "Live music", "Private dining", "Wine selection", "Air conditioning", "WiFi", "Wheelchair accessible"],
+    "rating": 4.8,
+    "reviewCount": 892
+  },
+  {
+    "id": "restaurant_4",
+    "name": "Chutneys",
+    "description": "Popular South Indian restaurant chain known for authentic dosas, idlis, and traditional breakfast items. A vegetarian paradise.",
+    "cuisineTypes": ["South Indian", "Vegetarian", "Breakfast"],
+    "location": {
+      "latitude": 17.4126,
+      "longitude": 78.4484,
+      "address": "Road No. 12, Banjara Hills, Hyderabad, Telangana 500034",
+      "neighborhood": "Banjara Hills"
+    },
+    "images": [
+      {
+        "url": "/images/cuisine6.jpg",
+        "alt": "Traditional South Indian breakfast spread",
+        "caption": "Authentic South Indian breakfast with fresh chutneys"
+      },
+      {
+        "url": "/images/location2.jpg",
+        "alt": "Clean and modern restaurant interior",
+        "caption": "Family-friendly dining atmosphere"
+      }
+    ],
+    "pricing": {
+      "priceRange": "budget",
+      "averageCost": 200,
+      "currency": "INR"
+    },
+    "dietaryOptions": {
+      "vegetarian": true,
+      "vegan": true,
+      "glutenFree": true,
+      "allergenInfo": {
+        "nuts": "Coconut used in chutneys and some dishes"
+      },
+      "spiceLevels": ["mild", "medium"]
+    },
+    "schedule": {
+      "openingTime": "07:00",
+      "closingTime": "22:30",
+      "closedDays": [],
+      "seasonalChanges": {}
+    },
+    "realTimeData": {
+      "availability": "busy",
+      "waitTime": 15,
+      "reservationRequired": false,
+      "weatherImpact": "",
+      "lastUpdated": "2025-09-20T19:45:00Z"
+    },
+    "menu": {
+      "items": [
+        {
+          "id": "item_17",
+          "name": "Masala Dosa",
+          "description": "Crispy rice crepe filled with spiced potato curry, served with coconut chutney and sambar.",
+          "price": 120,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["vegetarian", "vegan", "gluten-free"]
+        },
+        {
+          "id": "item_18",
+          "name": "Idli Sambar",
+          "description": "Steamed rice cakes served with lentil soup and assorted chutneys. Traditional breakfast.",
+          "price": 80,
+          "category": "Breakfast",
+          "spiceLevel": "mild",
+          "dietaryTags": ["vegetarian", "vegan", "gluten-free"]
+        },
+        {
+          "id": "item_19",
+          "name": "Rava Dosa",
+          "description": "Crispy semolina crepe with onions and spices, served with chutneys.",
+          "price": 140,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["vegetarian"]
+        },
+        {
+          "id": "item_20",
+          "name": "Uttapam",
+          "description": "Thick pancake topped with vegetables like onions, tomatoes, and chilies.",
+          "price": 110,
+          "category": "Main Course",
+          "spiceLevel": "mild",
+          "dietaryTags": ["vegetarian", "gluten-free"]
+        },
+        {
+          "id": "item_21",
+          "name": "Filter Coffee",
+          "description": "Traditional South Indian coffee brewed with chicory and served with hot milk.",
+          "price": 40,
+          "category": "Beverages",
+          "spiceLevel": "none",
+          "dietaryTags": ["vegetarian"]
+        },
+        {
+          "id": "item_22",
+          "name": "Coconut Chutney",
+          "description": "Fresh coconut ground with green chilies and curry leaves. Perfect accompaniment.",
+          "price": 30,
+          "category": "Sides",
+          "spiceLevel": "mild",
+          "dietaryTags": ["vegetarian", "vegan", "gluten-free"]
+        }
+      ],
+      "lastUpdated": "2025-09-20T00:00:00Z"
+    },
+    "amenities": ["Family dining", "Quick service", "Takeaway", "Air conditioning", "Card payment", "Digital payment"],
+    "rating": 4.2,
+    "reviewCount": 2156
   }
 ]
