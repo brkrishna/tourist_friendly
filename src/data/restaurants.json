@@ -1,0 +1,124 @@
+[
+  {
+    "id": "restaurant_1",
+    "name": "Paradise Restaurant",
+    "description": "Famous for authentic Hyderabadi biryani and traditional cuisine.",
+    "cuisineTypes": ["Hyderabadi", "Mughlai", "Indian"],
+    "location": {
+      "latitude": 17.4065,
+      "longitude": 78.4772,
+      "address": "Near Persis Hotel, M.G Road, Secunderabad, Telangana 500003",
+      "neighborhood": "Secunderabad"
+    },
+    "images": [
+      {
+        "url": "/images/paradise-restaurant.jpg",
+        "alt": "Paradise Restaurant interior with traditional decor",
+        "caption": "The iconic Paradise Restaurant known for its biryani"
+      }
+    ],
+    "pricing": {
+      "priceRange": "moderate",
+      "averageCost": 400,
+      "currency": "INR"
+    },
+    "dietaryOptions": {
+      "vegetarian": true,
+      "vegan": false,
+      "glutenFree": false,
+      "allergenInfo": {},
+      "spiceLevels": ["mild", "medium", "hot"]
+    },
+    "schedule": {
+      "openingTime": "12:00",
+      "closingTime": "23:30",
+      "closedDays": [],
+      "seasonalChanges": {}
+    },
+    "realTimeData": {
+      "availability": "busy",
+      "waitTime": 25,
+      "reservationRequired": false,
+      "weatherImpact": "",
+      "lastUpdated": "2025-09-20T19:00:00Z"
+    },
+    "menu": {
+      "items": [
+        {
+          "id": "item_1",
+          "name": "Hyderabadi Chicken Biryani",
+          "description": "Aromatic basmati rice cooked with tender chicken and traditional spices",
+          "price": 320,
+          "category": "Main Course",
+          "spiceLevel": "medium",
+          "dietaryTags": ["non-vegetarian"]
+        }
+      ],
+      "lastUpdated": "2025-09-15T00:00:00Z"
+    },
+    "amenities": ["Air conditioning", "Takeaway", "Family dining", "Parking"],
+    "rating": 4.4,
+    "reviewCount": 5643
+  },
+  {
+    "id": "restaurant_2",
+    "name": "Shah Ghouse Cafe",
+    "description": "Authentic Hyderabadi cuisine with famous kebabs and biryanis.",
+    "cuisineTypes": ["Hyderabadi", "Mughlai"],
+    "location": {
+      "latitude": 17.3598,
+      "longitude": 78.4734,
+      "address": "Charminar, Hyderabad, Telangana 500002",
+      "neighborhood": "Old City"
+    },
+    "images": [
+      {
+        "url": "/images/shah-ghouse.jpg",
+        "alt": "Shah Ghouse Cafe traditional setting",
+        "caption": "Traditional dining experience at Shah Ghouse Cafe"
+      }
+    ],
+    "pricing": {
+      "priceRange": "budget",
+      "averageCost": 250,
+      "currency": "INR"
+    },
+    "dietaryOptions": {
+      "vegetarian": true,
+      "vegan": false,
+      "glutenFree": false,
+      "allergenInfo": {},
+      "spiceLevels": ["medium", "hot"]
+    },
+    "schedule": {
+      "openingTime": "11:00",
+      "closingTime": "01:00",
+      "closedDays": [],
+      "seasonalChanges": {}
+    },
+    "realTimeData": {
+      "availability": "available",
+      "waitTime": 10,
+      "reservationRequired": false,
+      "weatherImpact": "",
+      "lastUpdated": "2025-09-20T19:30:00Z"
+    },
+    "menu": {
+      "items": [
+        {
+          "id": "item_2",
+          "name": "Mutton Seekh Kebab",
+          "description": "Grilled minced mutton kebabs with aromatic spices",
+          "price": 180,
+          "category": "Appetizers",
+          "spiceLevel": "hot",
+          "dietaryTags": ["non-vegetarian"]
+        }
+      ],
+      "lastUpdated": "2025-09-15T00:00:00Z"
+    },
+    "amenities": ["Takeaway", "Late night dining", "Street food"],
+    "rating": 4.6,
+    "reviewCount": 3421
+  }
+]

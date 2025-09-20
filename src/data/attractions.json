@@ -1,0 +1,140 @@
+[
+  {
+    "id": "attraction_1",
+    "name": "Charminar",
+    "description": "The iconic 16th-century mosque and monument in Hyderabad, a symbol of the city's rich history.",
+    "category": "historical",
+    "location": {
+      "latitude": 17.3616,
+      "longitude": 78.4747,
+      "address": "Charminar Rd, Char Kaman, Ghansi Bazaar, Hyderabad, Telangana 500002",
+      "neighborhood": "Old City"
+    },
+    "images": [
+      {
+        "url": "/images/charminar-main.jpg",
+        "alt": "Charminar monument during daytime",
+        "caption": "The majestic Charminar standing tall in the heart of Hyderabad"
+      }
+    ],
+    "pricing": {
+      "entryFee": 25,
+      "currency": "INR",
+      "freeForChildren": true
+    },
+    "schedule": {
+      "openingTime": "09:00",
+      "closingTime": "17:30",
+      "closedDays": [],
+      "seasonalChanges": {}
+    },
+    "accessibility": {
+      "wheelchairAccessible": false,
+      "audioGuides": true,
+      "visualAids": false,
+      "accessibilityDescription": "Limited wheelchair access due to historical architecture"
+    },
+    "realTimeData": {
+      "crowdLevel": "medium",
+      "waitTime": 15,
+      "weatherImpact": "Clear weather, perfect for visiting",
+      "lastUpdated": "2025-09-20T10:00:00Z"
+    },
+    "amenities": ["Parking", "Photography allowed", "Guided tours", "Souvenir shop"],
+    "rating": 4.5,
+    "reviewCount": 2847,
+    "tags": ["historical", "architecture", "photography", "heritage", "iconic"]
+  },
+  {
+    "id": "attraction_2",
+    "name": "Golconda Fort",
+    "description": "A ruined citadel and fortress city located on the western outskirts of Hyderabad.",
+    "category": "historical",
+    "location": {
+      "latitude": 17.3833,
+      "longitude": 78.4011,
+      "address": "Golconda, Hyderabad, Telangana 500008",
+      "neighborhood": "Golconda"
+    },
+    "images": [
+      {
+        "url": "/images/golconda-fort.jpg",
+        "alt": "Golconda Fort ruins with ancient walls",
+        "caption": "The majestic ruins of Golconda Fort showcasing medieval architecture"
+      }
+    ],
+    "pricing": {
+      "entryFee": 30,
+      "currency": "INR",
+      "freeForChildren": true
+    },
+    "schedule": {
+      "openingTime": "09:00",
+      "closingTime": "17:30",
+      "closedDays": ["Friday"],
+      "seasonalChanges": {}
+    },
+    "accessibility": {
+      "wheelchairAccessible": false,
+      "audioGuides": true,
+      "visualAids": true,
+      "accessibilityDescription": "Challenging terrain, not suitable for mobility aids"
+    },
+    "realTimeData": {
+      "crowdLevel": "low",
+      "waitTime": 5,
+      "weatherImpact": "Cool morning, ideal for exploration",
+      "lastUpdated": "2025-09-20T09:30:00Z"
+    },
+    "amenities": ["Parking", "Guided tours", "Sound and light show", "Cafeteria"],
+    "rating": 4.3,
+    "reviewCount": 1924,
+    "tags": ["fort", "ruins", "history", "architecture", "trekking"]
+  },
+  {
+    "id": "attraction_3",
+    "name": "Hussain Sagar Lake",
+    "description": "A heart-shaped lake built in 1563, famous for the Buddha statue in the center.",
+    "category": "nature",
+    "location": {
+      "latitude": 17.4239,
+      "longitude": 78.4738,
+      "address": "Hussain Sagar, Hyderabad, Telangana",
+      "neighborhood": "Secunderabad"
+    },
+    "images": [
+      {
+        "url": "/images/hussain-sagar.jpg",
+        "alt": "Hussain Sagar Lake with Buddha statue",
+        "caption": "The serene Hussain Sagar Lake with the iconic Buddha statue"
+      }
+    ],
+    "pricing": {
+      "entryFee": 0,
+      "currency": "INR",
+      "freeForChildren": true
+    },
+    "schedule": {
+      "openingTime": "05:00",
+      "closingTime": "22:00",
+      "closedDays": [],
+      "seasonalChanges": {}
+    },
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "audioGuides": false,
+      "visualAids": false,
+      "accessibilityDescription": "Wheelchair accessible with paved walkways"
+    },
+    "realTimeData": {
+      "crowdLevel": "medium",
+      "waitTime": 0,
+      "weatherImpact": "Pleasant evening breeze",
+      "lastUpdated": "2025-09-20T18:00:00Z"
+    },
+    "amenities": ["Boating", "Walking track", "Food stalls", "Musical fountain"],
+    "rating": 4.2,
+    "reviewCount": 3156,
+    "tags": ["lake", "boating", "evening", "family", "peaceful"]
+  }
+]

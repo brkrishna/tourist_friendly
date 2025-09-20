@@ -1,0 +1,80 @@
+[
+  {
+    "id": "user_1",
+    "email": "sarah.chen@email.com",
+    "name": "Sarah Chen",
+    "profileType": "first-time",
+    "preferences": {
+      "interests": ["historical", "cultural"],
+      "budget": {
+        "min": 50,
+        "max": 200,
+        "currency": "USD"
+      },
+      "travelDates": {
+        "startDate": "2025-10-01T00:00:00Z",
+        "endDate": "2025-10-05T00:00:00Z"
+      },
+      "groupSize": 2,
+      "dietaryRestrictions": ["vegetarian"],
+      "accessibilityNeeds": [],
+      "spiceLevel": "medium"
+    },
+    "emergencyContacts": [
+      {
+        "id": "contact_1",
+        "name": "John Chen",
+        "relationship": "spouse",
+        "phone": "+1-555-0123",
+        "email": "john.chen@email.com",
+        "priority": "primary",
+        "permissions": {
+          "locationSharing": true,
+          "emergencyNotifications": true,
+          "itineraryAccess": true
+        }
+      }
+    ],
+    "createdAt": "2025-09-19T10:00:00Z",
+    "lastActive": "2025-09-20T09:00:00Z"
+  },
+  {
+    "id": "user_2",
+    "email": "raj.patel@email.com",
+    "name": "Raj Patel",
+    "profileType": "foodie",
+    "preferences": {
+      "interests": ["cuisine", "cultural", "markets"],
+      "budget": {
+        "min": 30,
+        "max": 150,
+        "currency": "USD"
+      },
+      "travelDates": {
+        "startDate": "2025-10-15T00:00:00Z",
+        "endDate": "2025-10-20T00:00:00Z"
+      },
+      "groupSize": 1,
+      "dietaryRestrictions": [],
+      "accessibilityNeeds": [],
+      "spiceLevel": "hot"
+    },
+    "emergencyContacts": [
+      {
+        "id": "contact_2",
+        "name": "Priya Patel",
+        "relationship": "wife",
+        "phone": "+91-9876543210",
+        "email": "priya.patel@email.com",
+        "priority": "primary",
+        "permissions": {
+          "locationSharing": true,
+          "emergencyNotifications": true,
+          "itineraryAccess": true
+        }
+      }
+    ],
+    "createdAt": "2025-09-18T14:30:00Z",
+    "lastActive": "2025-09-20T08:15:00Z"
+  }
+]

@@ -47,7 +47,11 @@
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**I. Component-First Architecture**: ✅ Features use shadcn/ui + Tailwind; ✅ Components are reusable and accessible
+**II. API-Route Integration**: ✅ Data interactions use Next.js API routes; ✅ Proper validation and error handling
+**III. Database Schema Management**: ✅ SQLite3 schema is versioned; ✅ Prepared statements for security
+**IV. Vercel-Optimized Deployment**: ✅ Serverless-compatible code; ✅ Assets optimized; ✅ Within platform limits
+**V. Performance & SEO First**: ✅ Lighthouse targets met; ✅ App Router patterns; ✅ Mobile-first design
 
 ## Project Structure
 
@@ -208,4 +212,4 @@ ios/ or android/
 - [ ] Complexity deviations documented
 
 ---
-*Based on Constitution v2.1.1 - See `/memory/constitution.md`*
+*Based on Constitution v1.0.0 - See `/memory/constitution.md`*
