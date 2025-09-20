@@ -1,0 +1,1 @@
+/* Leaflet marker icons - these should be replaced with actual marker image files */

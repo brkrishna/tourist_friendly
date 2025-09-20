@@ -83,6 +83,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/map-comparison/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/map-comparison">> = Specific
+  const handler = {} as typeof import("../../src/app/map-comparison/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/maps/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/maps">> = Specific
@@ -105,6 +114,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends AppPageConfig<"/register">> = Specific
   const handler = {} as typeof import("../../src/app/register/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/restaurants/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/restaurants">> = Specific
+  const handler = {} as typeof import("../../src/app/restaurants/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
