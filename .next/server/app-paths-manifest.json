@@ -1,9 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/attractions/[id]/route": "app/api/attractions/[id]/route.js",
+  "/api/ai/recommendations/route": "app/api/ai/recommendations/route.js",
+  "/api/ai/chat/route": "app/api/ai/chat/route.js",
+  "/api/restaurants/route": "app/api/restaurants/route.js",
   "/api/attractions/route": "app/api/attractions/route.js",
   "/api/auth/register/route": "app/api/auth/register/route.js",
-  "/api/restaurants/route": "app/api/restaurants/route.js",
+  "/api/attractions/[id]/route": "app/api/attractions/[id]/route.js",
+  "/assistant/page": "app/assistant/page.js",
+  "/register/page": "app/register/page.js",
   "/attractions/page": "app/attractions/page.js",
+  "/login/page": "app/login/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
   "/page": "app/page.js"
 }

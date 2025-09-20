@@ -1,9 +1,15 @@
 {
   "/_not-found/page": "/_not-found",
-  "/api/attractions/[id]/route": "/api/attractions/[id]",
+  "/api/ai/recommendations/route": "/api/ai/recommendations",
+  "/api/ai/chat/route": "/api/ai/chat",
+  "/api/restaurants/route": "/api/restaurants",
   "/api/attractions/route": "/api/attractions",
   "/api/auth/register/route": "/api/auth/register",
-  "/api/restaurants/route": "/api/restaurants",
+  "/api/attractions/[id]/route": "/api/attractions/[id]",
+  "/assistant/page": "/assistant",
+  "/register/page": "/register",
   "/attractions/page": "/attractions",
+  "/login/page": "/login",
+  "/dashboard/page": "/dashboard",
   "/page": "/"
 }

@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { MapPin, Home, Utensils, Users, MessageCircle, User } from 'lucide-react'
+import { MapPin, Home, Utensils, Users, MessageCircle, User, Menu, LogIn, UserPlus } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 const navigation = [
@@ -11,7 +12,7 @@ const navigation = [
   { name: 'Restaurants', href: '/restaurants', icon: Utensils },
   { name: 'Guides', href: '/guides', icon: Users },
   { name: 'AI Assistant', href: '/assistant', icon: MessageCircle },
-  { name: 'Profile', href: '/profile', icon: User },
+  { name: 'Dashboard', href: '/dashboard', icon: User },
 ]
 
 export function Navigation() {
@@ -43,12 +44,39 @@ export function Navigation() {
           </nav>
         </div>
         
+        {/* Desktop auth buttons */}
+        <div className="ml-auto hidden md:flex items-center space-x-4">
+          <Link href="/login">
+            <Button variant="ghost" size="sm">
+              <LogIn className="h-4 w-4 mr-2" />
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/register">
+            <Button size="sm">
+              <UserPlus className="h-4 w-4 mr-2" />
+              Sign Up
+            </Button>
+          </Link>
+        </div>
+        
         {/* Mobile navigation */}
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Link href="/" className="flex items-center space-x-2 md:hidden">
-              <MapPin className="h-6 w-6" />
-              <span className="font-bold">Tourist Friendly</span>
+        <div className="flex flex-1 items-center justify-between space-x-2 md:hidden">
+          <Link href="/" className="flex items-center space-x-2">
+            <MapPin className="h-6 w-6" />
+            <span className="font-bold">Tourist Friendly</span>
+          </Link>
+          
+          <div className="flex items-center space-x-2">
+            <Link href="/login">
+              <Button variant="ghost" size="sm">
+                <LogIn className="h-4 w-4" />
+              </Button>
+            </Link>
+            <Link href="/register">
+              <Button size="sm">
+                <UserPlus className="h-4 w-4" />
+              </Button>
             </Link>
           </div>
         </div>
