@@ -1,3 +1,66 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/app/_not-found/page-287310b88167680e.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/css/1147535d653efe78.css",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/741-c6fbd461c7c50439.js",
+      "static/chunks/app/layout-f6d0e11f6570fa86.js"
+    ],
+    "/api/attractions/[id]/route": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/app/api/attractions/[id]/route-b7544b8b06f17fdf.js"
+    ],
+    "/api/attractions/route": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/app/api/attractions/route-b7544b8b06f17fdf.js"
+    ],
+    "/api/auth/register/route": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/app/api/auth/register/route-b7544b8b06f17fdf.js"
+    ],
+    "/api/restaurants/route": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/app/api/restaurants/route-b7544b8b06f17fdf.js"
+    ],
+    "/attractions/page": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/741-c6fbd461c7c50439.js",
+      "static/chunks/app/attractions/page-54e5ecf4cebab645.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-1cfde1083c417f43.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-cd204b98acda1641.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/page-fd43599b6c1d8e60.js"
+    ]
+  }
 }
