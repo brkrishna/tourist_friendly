@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { MapPin, Home, Utensils, Users, MessageCircle, User, Menu, LogIn, UserPlus } from 'lucide-react'
+import { MapPin, Home, Utensils, Users, MessageCircle, User, Menu, LogIn, UserPlus, Map } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Home', href: '/', icon: Home },
   { name: 'Attractions', href: '/attractions', icon: MapPin },
   { name: 'Restaurants', href: '/restaurants', icon: Utensils },
+  { name: 'Maps', href: '/maps', icon: Map },
   { name: 'Guides', href: '/guides', icon: Users },
   { name: 'AI Assistant', href: '/assistant', icon: MessageCircle },
   { name: 'Dashboard', href: '/dashboard', icon: User },
