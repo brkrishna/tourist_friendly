@@ -20,28 +20,28 @@ export default function AttractionsPage() {
   ]
 
   useEffect(() => {
+    const fetchAttractions = async () => {
+      try {
+        setLoading(true)
+        const url = selectedCategory === 'all' 
+          ? '/api/attractions' 
+          : `/api/attractions?category=${selectedCategory}`
+        
+        const response = await fetch(url)
+        const result = await response.json()
+        
+        if (result.success) {
+          setAttractions(result.data)
+        }
+      } catch (error) {
+        console.error('Failed to fetch attractions:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    
     fetchAttractions()
   }, [selectedCategory])
-
-  const fetchAttractions = async () => {
-    try {
-      setLoading(true)
-      const url = selectedCategory === 'all' 
-        ? '/api/attractions' 
-        : `/api/attractions?category=${selectedCategory}`
-      
-      const response = await fetch(url)
-      const result = await response.json()
-      
-      if (result.success) {
-        setAttractions(result.data)
-      }
-    } catch (error) {
-      console.error('Failed to fetch attractions:', error)
-    } finally {
-      setLoading(false)
-    }
-  }
 
   return (
     <div className="container mx-auto px-4 py-8">

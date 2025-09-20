@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Star, MapPin, Clock, ExternalLink, Navigation } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Star, MapPin, Clock, ExternalLink, Navigation, Map, Globe } from 'lucide-react';
 import GoogleMap from '@/components/maps/GoogleMap';
+import LeafletMap from '@/components/LeafletMap';
 import LocationSearch from '@/components/maps/LocationSearch';
 import LocationFilter from '@/components/maps/LocationFilter';
 import { LocationCoordinates, MapLocation, getCurrentLocation, formatDistance, calculateDistance, getDirectionsUrl } from '@/lib/google-maps';
@@ -18,7 +20,9 @@ export default function MapsPage() {
   const [filteredAttractions, setFilteredAttractions] = useState<Attraction[]>([]);
   const [selectedAttraction, setSelectedAttraction] = useState<Attraction | null>(null);
   const [mapMarkers, setMapMarkers] = useState<MapLocation[]>([]);
+  const [leafletPoints, setLeafletPoints] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [activeMapType, setActiveMapType] = useState<'google' | 'leaflet'>('leaflet');
 
   // Load attractions data
   useEffect(() => {
@@ -28,12 +32,24 @@ export default function MapsPage() {
         // Fetch from our API
         const response = await fetch('/api/attractions');
         if (response.ok) {
-          const data = await response.json();
-          setAttractions(data);
-          setFilteredAttractions(data);
+          const result = await response.json();
+          if (result.success && Array.isArray(result.data)) {
+            setAttractions(result.data);
+            setFilteredAttractions(result.data);
+          } else {
+            console.error('Invalid API response:', result);
+            setAttractions([]);
+            setFilteredAttractions([]);
+          }
+        } else {
+          console.error('Failed to fetch attractions:', response.status);
+          setAttractions([]);
+          setFilteredAttractions([]);
         }
       } catch (error) {
         console.error('Failed to load attractions:', error);
+        setAttractions([]);
+        setFilteredAttractions([]);
       } finally {
         setIsLoading(false);
       }
@@ -59,6 +75,12 @@ export default function MapsPage() {
 
   // Update map markers when filtered attractions change
   useEffect(() => {
+    if (!Array.isArray(filteredAttractions)) {
+      setMapMarkers([]);
+      setLeafletPoints([]);
+      return;
+    }
+
     const markers: MapLocation[] = filteredAttractions.map(attraction => ({
       latitude: attraction.location.latitude,
       longitude: attraction.location.longitude,
@@ -66,7 +88,18 @@ export default function MapsPage() {
       address: attraction.location.address
     }));
 
+    const leafletData = filteredAttractions.map(attraction => ({
+      id: attraction.id,
+      position: [attraction.location.latitude, attraction.location.longitude] as [number, number],
+      title: attraction.name,
+      description: attraction.description,
+      category: 'attraction',
+      rating: attraction.rating,
+      image: attraction.images?.[0]?.url
+    }));
+
     setMapMarkers(markers);
+    setLeafletPoints(leafletData);
   }, [filteredAttractions]);
 
   // Handle location search
@@ -79,6 +112,10 @@ export default function MapsPage() {
 
   // Handle attraction selection from map
   const handleMapLocationSelect = (location: MapLocation) => {
+    if (!Array.isArray(filteredAttractions)) {
+      return;
+    }
+    
     const attraction = filteredAttractions.find(
       a => a.location.latitude === location.latitude && 
            a.location.longitude === location.longitude
@@ -154,7 +191,7 @@ export default function MapsPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">
-                Nearby Attractions ({filteredAttractions.length})
+                Nearby Attractions ({Array.isArray(filteredAttractions) ? filteredAttractions.length : 0})
               </CardTitle>
             </CardHeader>
             <CardContent className="max-h-96 overflow-y-auto space-y-3">
@@ -162,7 +199,7 @@ export default function MapsPage() {
                 <div className="text-center py-4 text-gray-500">
                   Loading attractions...
                 </div>
-              ) : filteredAttractions.length === 0 ? (
+              ) : !Array.isArray(filteredAttractions) || filteredAttractions.length === 0 ? (
                 <div className="text-center py-4 text-gray-500">
                   No attractions found matching your filters
                 </div>
@@ -210,18 +247,66 @@ export default function MapsPage() {
 
         {/* Right Panel - Map and Details */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Map */}
+          {/* Map with Tabs for different providers */}
           <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Map className="h-5 w-5" />
+                  Interactive Map
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Badge variant="secondary" className="text-xs">
+                    {activeMapType === 'leaflet' ? 'Open Source' : 'Google Maps'}
+                  </Badge>
+                </div>
+              </CardTitle>
+            </CardHeader>
             <CardContent className="p-0">
-              <GoogleMap
-                center={selectedLocation || undefined}
-                zoom={selectedLocation ? 15 : 12}
-                markers={mapMarkers}
-                onLocationSelect={handleMapLocationSelect}
-                showUserLocation={true}
-                height="500px"
-                className="rounded-lg"
-              />
+              <Tabs value={activeMapType} onValueChange={(value) => setActiveMapType(value as 'google' | 'leaflet')}>
+                <TabsList className="grid w-full grid-cols-2 mb-4 mx-4">
+                  <TabsTrigger value="leaflet" className="flex items-center gap-2">
+                    <Globe className="h-4 w-4" />
+                    OpenStreetMap (Free)
+                  </TabsTrigger>
+                  <TabsTrigger value="google" className="flex items-center gap-2">
+                    <Map className="h-4 w-4" />
+                    Google Maps
+                  </TabsTrigger>
+                </TabsList>
+                
+                <TabsContent value="leaflet" className="mt-0">
+                  <LeafletMap
+                    center={selectedLocation ? [selectedLocation.latitude, selectedLocation.longitude] : undefined}
+                    zoom={selectedLocation ? 15 : 12}
+                    points={leafletPoints}
+                    height="500px"
+                    className="rounded-lg"
+                    showControls={true}
+                  />
+                </TabsContent>
+                
+                <TabsContent value="google" className="mt-0">
+                  <GoogleMap
+                    center={selectedLocation || undefined}
+                    zoom={selectedLocation ? 15 : 12}
+                    markers={mapMarkers}
+                    onLocationSelect={handleMapLocationSelect}
+                    showUserLocation={true}
+                    height="500px"
+                    className="rounded-lg"
+                  />
+                </TabsContent>
+              </Tabs>
+              
+              <div className="px-4 pb-4">
+                <p className="text-xs text-muted-foreground">
+                  {activeMapType === 'leaflet' 
+                    ? '🌍 Using OpenStreetMap - Free, open source mapping data'
+                    : '🗺️ Using Google Maps - May require API key for extended usage'
+                  }
+                </p>
+              </div>
             </CardContent>
           </Card>
 

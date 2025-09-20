@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { MapPin, Clock, Star, Users } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface AttractionCardProps {
   attraction: Attraction
@@ -21,11 +22,12 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
   return (
     <Card className="overflow-hidden">
       {attraction.images.length > 0 && (
-        <div className="aspect-video w-full overflow-hidden">
-          <img
+        <div className="aspect-video w-full overflow-hidden relative">
+          <Image
             src={attraction.images[0].url}
             alt={attraction.images[0].alt}
-            className="h-full w-full object-cover transition-transform hover:scale-105"
+            fill
+            className="object-cover transition-transform hover:scale-105"
             onError={(e) => {
               // Fallback for missing images
               e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDMyMCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iMTgwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNjAgOTBMMTIwIDYwSDE2MFYzMEwyMDAgNjBIMTYwVjkwWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K'

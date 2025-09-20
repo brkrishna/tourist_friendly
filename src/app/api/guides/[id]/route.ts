@@ -108,10 +108,10 @@ const guides = [
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const guideId = params.id;
+    const { id: guideId } = await params;
     
     if (!guideId) {
       return NextResponse.json(
@@ -161,10 +161,10 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const guideId = params.id;
+    const { id: guideId } = await params;
     const body = await request.json();
     
     if (!guideId) {
