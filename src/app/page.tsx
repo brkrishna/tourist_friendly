@@ -51,23 +51,25 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-8">
           Everything You Need for Your Hyderabad Journey
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature) => (
-            <Card key={feature.title} className="hover:shadow-lg transition-shadow">
-              <CardHeader className="text-center">
-                <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <CardTitle className="text-lg">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-center mb-4">
-                  {feature.description}
-                </CardDescription>
-                <Link href={feature.href}>
-                  <Button className="w-full" variant="outline">Learn More</Button>
-                </Link>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full">
+            {features.map((feature) => (
+              <Card key={feature.title} className="hover:shadow-lg transition-shadow mx-auto">
+                <CardHeader className="text-center">
+                  <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <CardTitle className="text-lg">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-center mb-4">
+                    {feature.description}
+                  </CardDescription>
+                  <Link href={feature.href}>
+                    <Button className="w-full" variant="outline">Learn More</Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
