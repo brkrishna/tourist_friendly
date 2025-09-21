@@ -65,14 +65,6 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/api/bookings/(?<nxtPid>[^/]+?)(?:/)?$"
-    },
-    {
-      "page": "/api/guides/[id]",
-      "regex": "^/api/guides/([^/]+?)(?:/)?$",
-      "routeKeys": {
-        "nxtPid": "nxtPid"
-      },
-      "namedRegex": "^/api/guides/(?<nxtPid>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [

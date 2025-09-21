@@ -18,12 +18,6 @@ export default function Home() {
       href: '/restaurants'
     },
     {
-      icon: Users,
-      title: 'Verified Guides',
-      description: 'Connect with blockchain-verified local tour guides',
-      href: '/guides'
-    },
-    {
       icon: MessageCircle,
       title: 'AI Assistant',
       description: 'Get personalized recommendations and travel planning help',
@@ -88,9 +82,6 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center">
-          <Link href="/profile">
-            <Button>Set Up Safety Features</Button>
-          </Link>
         </div>
       </section>
 
