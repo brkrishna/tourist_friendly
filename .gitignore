@@ -34,3 +34,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS-specific files
+Thumbs.db
+
+# Log files
+*.log
+
+# Test output
+/test-results/

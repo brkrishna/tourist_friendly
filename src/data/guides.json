@@ -1,13 +1,5 @@
-[
-  {
-    "id": "guide-001",
-    "name": "Rajesh Kumar",
-    "specialization": ["Heritage", "Historical Sites", "Photography"],
-    "experience": 12,
-    "languages": ["English", "Hindi", "Telugu", "Urdu"],
-    "rating": 4.8,
-    "reviewCount": 234,
-    "location": {
+
+    
       "latitude": 17.3616,
       "longitude": 78.4747,
       "baseArea": "Old City",

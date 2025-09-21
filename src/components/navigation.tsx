@@ -11,7 +11,6 @@ const navigation = [
   { name: 'Attractions', href: '/attractions', icon: MapPin },
   { name: 'Restaurants', href: '/restaurants', icon: Utensils },
   { name: 'Maps', href: '/maps', icon: Map },
-  { name: 'Guides', href: '/guides', icon: Users },
   { name: 'AI Assistant', href: '/assistant', icon: MessageCircle },
   { name: 'Dashboard', href: '/dashboard', icon: User },
 ]
