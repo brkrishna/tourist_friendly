@@ -1,4 +1,4 @@
-# Tourist Portal - Vercel Deployment Guide
+# Vigilant Voyager - Vercel Deployment Guide
 
 ## Quick Deployment to Vercel
 
@@ -12,7 +12,7 @@
 2. **Visit [vercel.com](https://vercel.com) and:**
    - Sign in with your GitHub account
    - Click "New Project"
-   - Import your `tourist_friendly` repository
+   - Import your `vigilant_voyager` repository
    - Select the `mvp-tourist-portal` branch
    - Vercel will auto-detect Next.js settings
 
@@ -132,4 +132,4 @@ After successful deployment:
 
 ---
 
-🚀 **Your Tourist Portal MVP is ready for the world!**
+🚀 **Your Vigilant Voyager MVP is ready for the world!**

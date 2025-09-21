@@ -6,8 +6,8 @@ import { Navigation } from '@/components/navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Tourist Friendly - Explore Hyderabad',
-  description: 'Comprehensive tourist web portal for Hyderabad with AI assistant, safety features, and attraction discovery',
+  title: 'Vigilant Voyager - Explore Hyderabad',
+  description: 'Vigilant Voyager: Your smart, safe, and AI-powered travel companion for Hyderabad.',
 }
 
 export default function RootLayout({

@@ -52,7 +52,7 @@ export default function RegisterPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-extrabold text-gray-900">
-            Join Tourist Portal
+            Join Vigilant Voyager
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Create your personalized travel profile to get the best recommendations for Hyderabad

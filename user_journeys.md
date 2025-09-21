@@ -1,4 +1,4 @@
-# Tourist Friendly - User Journeys
+# Vigilant Voyager - User Journeys
 
 ## Overview
 This document outlines user journeys for a comprehensive tourist web portal featuring attraction discovery, cuisine exploration, blockchain-verified tour guides, AI travel planning, geo-fencing safety features, and enhanced tourist experience tools.
@@ -16,7 +16,7 @@ This document outlines user journeys for a comprehensive tourist web portal feat
 ### Journey Steps
 
 1. **Landing & Onboarding**
-   - Visits tourist-friendly.com
+   - Visits vigilant-voyager.com
    - Selects "First time in Hyderabad?" prompt
    - Completes quick preference survey (interests, budget, travel dates, group size)
    - Creates account with email/social login
@@ -380,4 +380,4 @@ This document outlines user journeys for a comprehensive tourist web portal feat
 
 ---
 
-*This document serves as the foundation for feature development and user experience design for the Tourist Friendly web portal.*
+*This document serves as the foundation for feature development and user experience design for the Vigilant Voyager web portal.*

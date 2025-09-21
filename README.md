@@ -1,4 +1,5 @@
-# Setup Instructions for Tourist Friendly Portal
+
+# Setup Instructions for Vigilant Voyager Portal
 
 Follow these steps to set up the project on a new machine:
 
@@ -10,7 +11,7 @@ Follow these steps to set up the project on a new machine:
 ## 2. Clone the Repository
 ```sh
 git clone <REPO_URL>
-cd tourist_friendly
+cd vigilant_voyager
 ```
 Replace `<REPO_URL>` with the actual repository URL.
 

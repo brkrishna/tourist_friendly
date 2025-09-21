@@ -30,10 +30,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-12">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-          Welcome to Tourist Friendly
+          Welcome to Vigilant Voyager
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Your comprehensive guide to exploring Hyderabad with AI-powered recommendations, 
+          Your vigilant companion for exploring Hyderabad with AI-powered recommendations, 
           safety features, and authentic local experiences.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

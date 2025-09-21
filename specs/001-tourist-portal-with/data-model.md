@@ -1,7 +1,7 @@
-# Data Model: Tourist Portal Entities
+# Data Model: Vigilant Voyager Entities
 
 ## Overview
-This document defines the data model for the Tourist Portal, including entity relationships, validation rules, and state transitions based on the functional requirements.
+This document defines the data model for Vigilant Voyager, including entity relationships, validation rules, and state transitions based on the functional requirements.
 
 ---
 
